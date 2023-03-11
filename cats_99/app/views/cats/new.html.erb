@@ -1,0 +1,31 @@
+<form action= <%= cats_url %> method 'post'>
+
+<label for="birth_date">Birth Date:
+    <input type="date" id='birth_date' name='cat[birth_date]' value = '<%= @cat.birth_date%>'>
+</label>
+<br>
+<label for="color">Color:
+	<select>
+    <input type="string" id='color' name='cat[color]' value = '<%= @cat.color%>'>
+    </select>
+</label>
+<br>
+<label for="name">Name:
+    <input type="string" id='name' name='cat[name]' value = '<%= @cat.name%>'>
+</label>
+<br>
+<label for="sex">Sex:
+    <input type="radio" id='M' name='cat[sex]' value = '<%= @cat.sex%>'>
+    <label for="M">M</label>
+    <input type="radio" id='F' name='cat[sex]' value = '<%= @cat.sex%>'>
+    <label for="F">F</label>
+</label>
+
+<br>
+<label for="sex">Description:
+    <input type="text" id='description' name='cat[description]' value = '<%= @cat.description%>'>
+</label>
+<br>
+<input type="submit" value="Create Cat">
+
+</form>
